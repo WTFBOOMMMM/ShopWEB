@@ -6,11 +6,14 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './pages/nav/nav.component';
 import { HomeComponent } from './pages/home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { LoginComponent } from './pages/login/login.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
