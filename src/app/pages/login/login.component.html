@@ -11,6 +11,8 @@
         <div class="form-floating mb-3">
             <input type="password" class="form-control" id="myPassword" placeholder="password">
             <label for="myPassword">Password</label>
+            <a class="ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><small>forget
+                    password</small></a>
         </div>
         <div class="mb-3 form-check ">
             <input class="form-check-input" type="checkbox" value="" id="rememberCheck">
@@ -20,7 +22,27 @@
         </div>
         <div class="mb-3">
             <button type="submit " class="btn btn-primary ">Login</button>
-            <small> <a class="ms-2 " routerLink="register">no account? register</a></small>
+            <small> <a class="ms-2 " routerLink="/register">no account? register</a></small>
         </div>
     </form>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Enter your email</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <input class="modal-input w-100" type="email" name="f-email" placeholder="Your email">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Confirm</button>
+            </div>
+        </div>
+    </div>
 </div>
